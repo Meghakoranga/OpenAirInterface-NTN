@@ -1,0 +1,311 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: 82fb9fcc7c Date: Tue Mar 18 15:21:56 2025 +0000
+[0m[UTIL]   Opened socket oaitun_ue1 with fd nas_sock_fd[0]=93
+[0m[PDCP]   UE pdcp will use tun interface
+[0m[SIM]   UICC simulation: IMSI=2089900007487, IMEISV=6754567890123413, Ki=fec86ba6eb707ed08905757b1bb44b8f, OPc=C42449363BBAD02B66D16BC975D77CC1, DNN=oai, SST=0x01, SD=0x000001
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[NR_MAC]   Initializing dl and ul config_request. num_slots = 10
+[0m[RLC]   Activated srb0 for UE 0
+[0m[93m[RLC]   SRB0 already exists for UE 0, do nothing
+[0m[PHY]   Set UE_fo_compensation 0, UE_scan_carrier 0, UE_no_timing_correction 0 
+, chest-freq 0, chest-time 0
+[0m[PHY]   Set UE nb_rx_antenna 1, nb_tx_antenna 1, threequarter_fs 0, ssb_start_subcarrier 60
+[0m[PHY]   SA init parameters. DL freq 2488400000 UL offset -873500000 SSB numerology 0 N_RB_DL 25
+[0m[PHY]   Init: N_RB_DL 25, first_carrier_offset 362, nb_prefix_samples 36,nb_prefix_samples0 40, ofdm_symbol_size 512
+[0m[93m[PHY]   samples_per_subframe 7680/per second 7680000, wCP 7168
+[0m[UTIL]   threadCreate() for SYNC__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for UL__actor: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Initializing UE vars for gNB TXant 1, UE RXant 1
+[0m[PHY]   prs_config configuration NOT found..!! Skipped configuring UE for the PRS reception
+[0m[PHY]   HW: Configuring card 0, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 1, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 2, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 3, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 4, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 5, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 6, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 7, sample_rate 7680000.000000, tx/rx num_channels 1/1, duplex_mode FDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614900000 Hz, rx_freq 2488400000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   Intializing UE Threads for instance 0 ...
+[0m[UTIL]   threadCreate() for UEthread_0: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_UE_stats_0: creating thread with affinity ffffffff, priority 1
+[0m[NR_RRC]   create TASK_RRC_NRUE 
+[0m[UTIL]   threadCreate() for TASK_RRC_NRUE: creating thread with affinity ffffffff, priority 50
+[0m[OCM]   Channel Model (inside of new_channel_desc_scm)=33
+
+[0m[OCM]   [CHANNEL] Getting new channel descriptor, nb_tx 1, nb_rx 1, nb_taps 1, channel_length 1
+[0m[OCM]   Model rfsimu_channel_enB0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1
+[0m[OCM]   Channel Model (inside of new_channel_desc_scm)=33
+
+[0m[OCM]   [CHANNEL] Getting new channel descriptor, nb_tx 1, nb_rx 1, nb_taps 1, channel_length 1
+[0m[OCM]   Model rfsimu_channel_ue0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1
+[0m[HW]   CirSize = 614400
+[0m[HW]   propagation delay 20.000000 ms, 153600 samples
+[0m[HW]   Running as client: will connect to a rfsimulator server side
+[0m[UTIL]   threadCreate() for TASK_NAS_NRUE: creating thread with affinity ffffffff, priority 50
+[0m[HW]   [RRU] has loaded RFSIMULATOR device.
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   Connection to 127.0.0.1:4043 established
+[0m[HW]   Random channel rfsimu_channel_enB0 in rfsimulator activated
+[0m[HW]   Satellite orbit: time -385.663820 s, Doppler: gNB->SAT 57.340138 kHz, SAT->UE 57.341459 kHz, Delay 18.885125 ms
+[0m[HW]   Satellite orbit: time -384.663820 s, Doppler: gNB->SAT 57.340104 kHz, SAT->UE 57.341425 kHz, Delay 18.839039 ms
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 2488400000, bandwidth: 25. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 60, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 60, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 61
+[0m[PHY]   [UE0] In synch, rx_offset 6444 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset -2 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 1614899999 Hz, rx_freq 2488399998 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 2, carrier off -2 Hz, rxgain 0.000000 (DL 2488399998.000000 Hz, UL 1614899998.702058 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=20 UE->init_sync_frame=1 trashed_frames=4
+[0m[PHY]   Resynchronizing RX by 6444 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[PHY]   [UE 0] frame 26, nr_slot_rx 0, Error decoding PBCH!
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[PHY]   N_TA_offset changed from 0 to 100
+[0m[NR_RRC]   [UE 0] Decoding SI
+[0m[NR_RRC]   Found SIB19
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[PHY]   cell_specific_k_offset = 40 ms, ntn_total_time_advance_ms = 37.662563 ms (289248 samples)
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 38, Slot 4, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 38.4, placing PRACH in position 728, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[PHY]   RAR-Msg2 decoded
+[0m[NR_MAC]   [UE 0][RAPROC][RA-RNTI 0039] Got BI RAR subPDU 5 ms
+[0m[NR_MAC]   [UE 0][RAPROC][RA-RNTI 0039] Got RAPID RAR subPDU
+[0m[32m[NR_MAC]   [UE 0][RAPROC][39.1] Found RAR with the intended RAPID 28
+[0m[93m[MAC]   received TA command 35
+[0m[32m[NR_MAC]   [RAPROC][43.9] RA-Msg3 transmitted
+[0m[32m[MAC]   [UE 0][45.0][RAPROC] 4-Step RA procedure succeeded. CBRA: Contention Resolution is successful.
+[0m[NR_RRC]   [UE0][RAPROC] Logical Channel DL-CCCH (SRB0), Received NR_RRCSetup
+[0m[RLC]   Added srb 1 to UE 0
+[0m[NR_RRC]   State = NR_RRC_CONNECTED
+[0m[NAS]   Generate Initial NAS Message: Registration Request
+[0m[MAC]   [UE 0] Applying CellGroupConfig from gNodeB
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_ESTABLISH_IND: asCause 0
+[0m[NR_RRC]   [UE 0][RAPROC] Logical Channel UL-DCCH (SRB1), Generating RRCSetupComplete (bytes32)
+[0m[HW]   Satellite orbit: time -383.663027 s, Doppler: gNB->SAT 57.340002 kHz, SAT->UE 57.341324 kHz, Delay 18.792917 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 2/0
+    Ul harq: 24/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.1, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -382.663001 s, Doppler: gNB->SAT 57.339832 kHz, SAT->UE 57.341154 kHz, Delay 18.746830 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 4/0
+    Ul harq: 68/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -381.662047 s, Doppler: gNB->SAT 57.339594 kHz, SAT->UE 57.340915 kHz, Delay 18.700700 ms
+[0m[NR_MAC]   UE 0 stats sfn: 384.0, cumulated bad DCI 0
+    DL harq: 5/0
+    Ul harq: 110/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -380.661093 s, Doppler: gNB->SAT 57.339285 kHz, SAT->UE 57.340607 kHz, Delay 18.654571 ms
+[0m[NR_MAC]   UE 0 stats sfn: 512.0, cumulated bad DCI 0
+    DL harq: 6/0
+    Ul harq: 152/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -379.660139 s, Doppler: gNB->SAT 57.338907 kHz, SAT->UE 57.340228 kHz, Delay 18.608442 ms
+[0m[HW]   Satellite orbit: time -378.659185 s, Doppler: gNB->SAT 57.338458 kHz, SAT->UE 57.339780 kHz, Delay 18.562313 ms
+[0m[NR_MAC]   UE 0 stats sfn: 640.0, cumulated bad DCI 0
+    DL harq: 7/0
+    Ul harq: 196/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -377.658231 s, Doppler: gNB->SAT 57.337939 kHz, SAT->UE 57.339260 kHz, Delay 18.516185 ms
+[0m[NR_MAC]   UE 0 stats sfn: 768.0, cumulated bad DCI 0
+    DL harq: 9/0
+    Ul harq: 238/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -376.657278 s, Doppler: gNB->SAT 57.337348 kHz, SAT->UE 57.338669 kHz, Delay 18.470057 ms
+[0m[NR_MAC]   UE 0 stats sfn: 896.0, cumulated bad DCI 0
+    DL harq: 10/0
+    Ul harq: 280/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -375.656323 s, Doppler: gNB->SAT 57.336684 kHz, SAT->UE 57.338005 kHz, Delay 18.423930 ms
+[0m[HW]   Satellite orbit: time -374.655369 s, Doppler: gNB->SAT 57.335948 kHz, SAT->UE 57.337269 kHz, Delay 18.377803 ms
+[0m[NR_MAC]   UE 0 stats sfn: 0.0, cumulated bad DCI 0
+    DL harq: 11/0
+    Ul harq: 324/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -373.654416 s, Doppler: gNB->SAT 57.335139 kHz, SAT->UE 57.336460 kHz, Delay 18.331677 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 13/0
+    Ul harq: 366/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -372.653534 s, Doppler: gNB->SAT 57.334256 kHz, SAT->UE 57.335577 kHz, Delay 18.285554 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 14/0
+    Ul harq: 408/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -371.653509 s, Doppler: gNB->SAT 57.333300 kHz, SAT->UE 57.334621 kHz, Delay 18.239472 ms
+[0m[NR_MAC]   UE 0 stats sfn: 384.0, cumulated bad DCI 0
+    DL harq: 15/0
+    Ul harq: 452/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -370.652554 s, Doppler: gNB->SAT 57.332268 kHz, SAT->UE 57.333589 kHz, Delay 18.193348 ms
+[0m[HW]   Satellite orbit: time -369.651601 s, Doppler: gNB->SAT 57.331160 kHz, SAT->UE 57.332481 kHz, Delay 18.147225 ms
+[0m[NR_MAC]   UE 0 stats sfn: 512.0, cumulated bad DCI 0
+    DL harq: 16/0
+    Ul harq: 494/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -368.650646 s, Doppler: gNB->SAT 57.329976 kHz, SAT->UE 57.331297 kHz, Delay 18.101103 ms
+[0m[NR_MAC]   UE 0 stats sfn: 640.0, cumulated bad DCI 0
+    DL harq: 18/0
+    Ul harq: 536/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -367.649693 s, Doppler: gNB->SAT 57.328715 kHz, SAT->UE 57.330036 kHz, Delay 18.054982 ms
+[0m[NR_MAC]   UE 0 stats sfn: 768.0, cumulated bad DCI 0
+    DL harq: 19/0
+    Ul harq: 580/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -366.648739 s, Doppler: gNB->SAT 57.327378 kHz, SAT->UE 57.328698 kHz, Delay 18.008861 ms
+[0m[NR_MAC]   UE 0 stats sfn: 896.0, cumulated bad DCI 0
+    DL harq: 20/0
+    Ul harq: 622/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -365.647785 s, Doppler: gNB->SAT 57.325962 kHz, SAT->UE 57.327282 kHz, Delay 17.962742 ms
+[0m[NR_MAC]   [925.0] Received TA_COMMAND 32 TAGID 0 CC_id 0 
+[0m[HW]   Satellite orbit: time -364.646831 s, Doppler: gNB->SAT 57.324467 kHz, SAT->UE 57.325788 kHz, Delay 17.916625 ms
+[0m[NR_MAC]   UE 0 stats sfn: 0.0, cumulated bad DCI 0
+    DL harq: 21/0
+    Ul harq: 664/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[NR_MAC]   [1.0] Received TA_COMMAND 30 TAGID 0 CC_id 0 
+[0m[HW]   Satellite orbit: time -363.645877 s, Doppler: gNB->SAT 57.322894 kHz, SAT->UE 57.324214 kHz, Delay 17.870508 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 23/0
+    Ul harq: 708/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -362.644923 s, Doppler: gNB->SAT 57.321240 kHz, SAT->UE 57.322560 kHz, Delay 17.824392 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 24/0
+    Ul harq: 750/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -361.644041 s, Doppler: gNB->SAT 57.319506 kHz, SAT->UE 57.320826 kHz, Delay 17.778282 ms
+[0m[HW]   Satellite orbit: time -360.644015 s, Doppler: gNB->SAT 57.317693 kHz, SAT->UE 57.319013 kHz, Delay 17.732212 ms
+[0m[NR_MAC]   UE 0 stats sfn: 384.0, cumulated bad DCI 0
+    DL harq: 25/0
+    Ul harq: 792/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -359.643062 s, Doppler: gNB->SAT 57.315795 kHz, SAT->UE 57.317116 kHz, Delay 17.686101 ms
+[0m[NR_MAC]   UE 0 stats sfn: 512.0, cumulated bad DCI 0
+    DL harq: 27/0
+    Ul harq: 836/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -358.642108 s, Doppler: gNB->SAT 57.313816 kHz, SAT->UE 57.315136 kHz, Delay 17.639991 ms
+[0m[NR_MAC]   UE 0 stats sfn: 640.0, cumulated bad DCI 0
+    DL harq: 28/0
+    Ul harq: 878/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -357.641154 s, Doppler: gNB->SAT 57.311753 kHz, SAT->UE 57.313073 kHz, Delay 17.593883 ms
+[0m[NR_MAC]   UE 0 stats sfn: 768.0, cumulated bad DCI 0
+    DL harq: 29/0
+    Ul harq: 920/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -356.640200 s, Doppler: gNB->SAT 57.309606 kHz, SAT->UE 57.310926 kHz, Delay 17.547777 ms
+[0m[HW]   Satellite orbit: time -355.639246 s, Doppler: gNB->SAT 57.307375 kHz, SAT->UE 57.308695 kHz, Delay 17.501673 ms
+[0m[NR_MAC]   UE 0 stats sfn: 896.0, cumulated bad DCI 0
+    DL harq: 30/0
+    Ul harq: 964/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -354.638292 s, Doppler: gNB->SAT 57.305059 kHz, SAT->UE 57.306378 kHz, Delay 17.455570 ms
+[0m[NR_MAC]   UE 0 stats sfn: 0.0, cumulated bad DCI 0
+    DL harq: 32/0
+    Ul harq: 1006/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -353.637338 s, Doppler: gNB->SAT 57.302656 kHz, SAT->UE 57.303975 kHz, Delay 17.409469 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 33/0
+    Ul harq: 1048/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -352.636384 s, Doppler: gNB->SAT 57.300166 kHz, SAT->UE 57.301486 kHz, Delay 17.363371 ms
+[0m[HW]   Satellite orbit: time -351.635430 s, Doppler: gNB->SAT 57.297589 kHz, SAT->UE 57.298909 kHz, Delay 17.317274 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 34/0
+    Ul harq: 1092/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -350.634548 s, Doppler: gNB->SAT 57.294924 kHz, SAT->UE 57.296243 kHz, Delay 17.271183 ms
+[0m[NR_MAC]   UE 0 stats sfn: 384.0, cumulated bad DCI 0
+    DL harq: 36/0
+    Ul harq: 1134/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -349.634523 s, Doppler: gNB->SAT 57.292173 kHz, SAT->UE 57.293492 kHz, Delay 17.225133 ms
+[0m[NR_MAC]   UE 0 stats sfn: 512.0, cumulated bad DCI 0
+    DL harq: 37/0
+    Ul harq: 1176/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -348.633569 s, Doppler: gNB->SAT 57.289328 kHz, SAT->UE 57.290647 kHz, Delay 17.179043 ms
+[0m[NR_MAC]   UE 0 stats sfn: 640.0, cumulated bad DCI 0
+    DL harq: 38/0
+    Ul harq: 1220/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -347.632614 s, Doppler: gNB->SAT 57.286394 kHz, SAT->UE 57.287713 kHz, Delay 17.132955 ms
+[0m[HW]   Satellite orbit: time -346.631661 s, Doppler: gNB->SAT 57.283368 kHz, SAT->UE 57.284687 kHz, Delay 17.086869 ms
+[0m[NR_MAC]   UE 0 stats sfn: 768.0, cumulated bad DCI 0
+    DL harq: 39/0
+    Ul harq: 1262/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -345.630707 s, Doppler: gNB->SAT 57.280250 kHz, SAT->UE 57.281568 kHz, Delay 17.040786 ms
+[0m[NR_MAC]   UE 0 stats sfn: 896.0, cumulated bad DCI 0
+    DL harq: 41/0
+    Ul harq: 1304/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -344.629753 s, Doppler: gNB->SAT 57.277038 kHz, SAT->UE 57.278357 kHz, Delay 16.994706 ms
+[0m[NR_MAC]   UE 0 stats sfn: 0.0, cumulated bad DCI 0
+    DL harq: 42/0
+    Ul harq: 1348/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -343.628799 s, Doppler: gNB->SAT 57.273733 kHz, SAT->UE 57.275052 kHz, Delay 16.948628 ms
+[0m[HW]   Satellite orbit: time -342.627845 s, Doppler: gNB->SAT 57.270334 kHz, SAT->UE 57.271652 kHz, Delay 16.902553 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 43/0
+    Ul harq: 1390/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -341.626891 s, Doppler: gNB->SAT 57.266838 kHz, SAT->UE 57.268156 kHz, Delay 16.856481 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 45/0
+    Ul harq: 1432/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -340.625937 s, Doppler: gNB->SAT 57.263247 kHz, SAT->UE 57.264565 kHz, Delay 16.810411 ms
+[0m[NR_MAC]   UE 0 stats sfn: 384.0, cumulated bad DCI 0
+    DL harq: 46/0
+    Ul harq: 1476/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -339.625055 s, Doppler: gNB->SAT 57.259558 kHz, SAT->UE 57.260876 kHz, Delay 16.764348 ms
+[0m[NR_MAC]   UE 0 stats sfn: 512.0, cumulated bad DCI 0
+    DL harq: 47/0
+    Ul harq: 1518/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -338.625029 s, Doppler: gNB->SAT 57.255775 kHz, SAT->UE 57.257092 kHz, Delay 16.718327 ms
+[0m[HW]   Satellite orbit: time -337.624075 s, Doppler: gNB->SAT 57.251889 kHz, SAT->UE 57.253206 kHz, Delay 16.672266 ms
+[0m[NR_MAC]   UE 0 stats sfn: 640.0, cumulated bad DCI 0
+    DL harq: 48/0
+    Ul harq: 1560/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -336.623122 s, Doppler: gNB->SAT 57.247903 kHz, SAT->UE 57.249220 kHz, Delay 16.626209 ms
+[0m[NR_MAC]   UE 0 stats sfn: 768.0, cumulated bad DCI 0
+    DL harq: 50/0
+    Ul harq: 1604/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -335.622168 s, Doppler: gNB->SAT 57.243817 kHz, SAT->UE 57.245134 kHz, Delay 16.580155 ms
+[0m[NR_MAC]   UE 0 stats sfn: 896.0, cumulated bad DCI 0
+    DL harq: 51/0
+    Ul harq: 1646/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -334.621213 s, Doppler: gNB->SAT 57.239628 kHz, SAT->UE 57.240945 kHz, Delay 16.534104 ms
+[0m[NR_MAC]   UE 0 stats sfn: 0.0, cumulated bad DCI 0
+    DL harq: 52/0
+    Ul harq: 1688/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -333.620259 s, Doppler: gNB->SAT 57.235337 kHz, SAT->UE 57.236654 kHz, Delay 16.488057 ms
+[0m[HW]   Satellite orbit: time -332.619306 s, Doppler: gNB->SAT 57.230943 kHz, SAT->UE 57.232259 kHz, Delay 16.442013 ms
+[0m[NR_MAC]   UE 0 stats sfn: 128.0, cumulated bad DCI 0
+    DL harq: 53/0
+    Ul harq: 1732/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -331.618351 s, Doppler: gNB->SAT 57.226443 kHz, SAT->UE 57.227759 kHz, Delay 16.395973 ms
+[0m[NR_MAC]   UE 0 stats sfn: 256.0, cumulated bad DCI 0
+    DL harq: 55/0
+    Ul harq: 1774/0 avg code rate 0.7, avg bit/symbol 2.0, avg per TB: (nb RBs 5.0, nb symbols 13.0)
+[0m[HW]   Satellite orbit: time -330.617397 s, Doppler: gNB->SAT 57.221838 kHz, SAT->UE 57.223154 kHz, Delay 16.349936 ms
+[0m[93m[HW]   Lost socket
+[0mCMDLINE: "./ran_build/build/nr-uesoftmodem" "-O" "../targets/PROJECTS/GENERIC-NR-5GC/CONF/ue.conf" "--band" "254" "-C" "2488400000" "--CO" "-873500000" "-r" "25" "--numerology" "0" "--ssb" "60" "--rfsim" "--rfsimulator.prop_delay" "20" "--rfsimulator.options" "chanmod" "--time-sync-I" "0.1" "--ntn-initial-time-drift" "-46" "--autonomous-ta" 
+[CONFIG] function config_libconfig_init returned 0
+UE threads created by 175771
+TYPE <CTRL-C> TO TERMINATE
+SAT_LEO_TRANS: satellite orbit height 600.000000 km
+SAT_LEO_TRANS: satellite orbit height 600.000000 km
+Initializing random number generator, seed 9238627561482894645
+Initializing random number generator, seed 4290417888238503647
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
