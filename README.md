@@ -1,97 +1,111 @@
-<h1 align="center">
-    <a href="https://openairinterface.org/"><img src="https://openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png" alt="OAI" width="550"></a>
-</h1>
+# NTN Configuration Guide: GEO and LEO Configurations
 
-<p align="center">
-    <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-OAI--Public--V1.1-blue" alt="License"></a>
-    <a href="https://releases.ubuntu.com/20.04/"><img src="https://img.shields.io/badge/OS-Ubuntu20-Green" alt="Supported OS Ubuntu 20"></a>
-    <a href="https://releases.ubuntu.com/22.04/"><img src="https://img.shields.io/badge/OS-Ubuntu22-Green" alt="Supported OS Ubuntu 22"></a>
-    <a href="https://releases.ubuntu.com/24.04/"><img src="https://img.shields.io/badge/OS-Ubuntu24-Green" alt="Supported OS Ubuntu 24"></a>
-    <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"><img src="https://img.shields.io/badge/OS-RHEL9-Green" alt="Supported OS RELH9"></a>
-    <a href="https://getfedora.org/en/workstation/"><img src="https://img.shields.io/badge/OS-Fedore41-Green" alt="Supported OS Fedora 41"></a>
-</p>
-
-<p align="center">
-    <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/releases"><img alt="GitLab Release (custom instance)" src="https://img.shields.io/gitlab/v/release/oai/openairinterface5g?gitlab_url=https%3A%2F%2Fgitlab.eurecom.fr&include_prereleases&sort=semver"></a>
-</p>
-
-<p align="center">
-    <a href="https://jenkins-oai.eurecom.fr/job/RAN-Container-Parent/"><img src="https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fjenkins-oai.eurecom.fr%2Fjob%2FRAN-Container-Parent%2F&label=build%20Images"></a>
-</p>
-
-<p align="center">
-  <a href="https://hub.docker.com/r/oaisoftwarealliance/oai-gnb"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/oaisoftwarealliance/oai-gnb?label=gNB%20docker%20pulls"></a>
-  <a href="https://hub.docker.com/r/oaisoftwarealliance/oai-nr-ue"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/oaisoftwarealliance/oai-nr-ue?label=NR-UE%20docker%20pulls"></a>
-  <a href="https://hub.docker.com/r/oaisoftwarealliance/oai-enb"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/oaisoftwarealliance/oai-enb?label=eNB%20docker%20pulls"></a>
-  <a href="https://hub.docker.com/r/oaisoftwarealliance/oai-lte-ue"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/oaisoftwarealliance/oai-lte-ue?label=LTE-UE%20docker%20pulls"></a>
-  <a href="https://hub.docker.com/r/oaisoftwarealliance/oai-nr-cuup"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/oaisoftwarealliance/oai-nr-cuup?label=NR-CUUP%20docker%20pulls"></a>
-</p>
-
-# OpenAirInterface License #
-
- *  [OAI License Model](http://www.openairinterface.org/?page_id=101)
- *  [OAI License v1.1 on our website](http://www.openairinterface.org/?page_id=698)
-
-It is distributed under **OAI Public License V1.1**.
-
-The license information is distributed under [LICENSE](LICENSE) file in the same directory.
-
-Please see [NOTICE](NOTICE.md) file for third party software that is included in the sources.
-
-# Where to Start #
-
- *  [General overview of documentation](./doc/README.md)
- *  [The implemented features](./doc/FEATURE_SET.md)
- *  [System Requirements for Using OAI Stack](./doc/system_requirements.md)
- *  [How to build](./doc/BUILD.md)
- *  [How to run the modems](./doc/RUNMODEM.md)
-
-Not all information is available in a central place, and information for
-specific sub-systems might be available in the corresponding sub-directories.
-To find all READMEs, this command might be handy:
-
-```
-find . -iname "readme*"
+This guide outlines setting up GEO and LEO configurations for the NTN (Non-Terrestrial Network) project using OpenAirInterface (OAI). It covers gNB and UE details, configuration files, commands, and log management.
+```bash
+git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git ~/openairinterface5g
+cd ~/openairinterface5g
 ```
 
-# RAN repository structure #
 
-The OpenAirInterface (OAI) software is composed of the following parts: 
+## gnb Configuration Files
+ 
+**GEO Configuration:**
+- Path: `ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn.conf`
+
+**LEO Configuration:**
+- Path: `ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn-leo.conf`
+
+## gNB Configuration Details
+The following changes are to be made in  `ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn.conf` 
+### Key Parameters
+
+**channel model** : rfsimulator has to be configured to apply the channel model.
+This can be done by providing this line in the conf file in section rfsimulator:
+
+  ```options = "chanmod";```
+## Simulation Parameters
+### cellSpecificKoffset_r17
+```bash
+ cellSpecificKoffset_r17=478;                              #GEO
+ cellSpecificKoffset_r17=40;                                #LEO
+```
+### HARQ
+```bash
+    disable_harq = 1; //    #GEO
+    num_dlharq = 32;        #LEO
+    num_ulharq = 32;        #LEO
+
 
 ```
-openairinterface5g
-├── charts
-├── ci-scripts        : Meta-scripts used by the OSA CI process. Contains also configuration files used day-to-day by CI.
-├── CMakeLists.txt    : Top-level CMakeLists.txt for building
-├── cmake_targets     : Build utilities to compile (simulation, emulation and real-time platforms), and generated build files.
-├── common            : Some common OAI utilities, some other tools can be found at openair2/UTILS.
-├── doc               : Documentation
-├── docker            : Dockerfiles to build for Ubuntu and RHEL
-├── executables       : Top-level executable source files (gNB, eNB, ...)
-├── maketags          : Script to generate emacs tags.
-├── nfapi             : (n)FAPI code for MAC-PHY interface
-├── openair1          : Layer 1 (3GPP LTE Rel-10/12 PHY, NR Rel-15 PHY)
-├── openair2          : Layer 2 (3GPP LTE Rel-10 MAC/RLC/PDCP/RRC/X2AP, LTE Rel-14 M2AP, NR Rel-15+ MAC/RLC/PDCP/SDAP/RRC/X2AP/F1AP/E1AP), E2AP
-├── openair3          : Layer 3 (3GPP LTE Rel-10 S1AP/GTP, NR Rel-15 NGAP/GTP)
-├── openshift         : OpenShift helm charts for some deployment options of OAI
-├── radio             : Drivers for various radios such as USRP, AW2S, RFsim, 7.2 FHI, ...
-├── targets           : Some configuration files; only historical relevance, and might be deleted in the future
-└── tools             : Tools for use by the developers/ci machines: code analysis and formatting
+##
+### GEO Simulation
+Add the following to gNB and UE command lines:
+```bash
+--rfsimulator.prop_delay 238.74
 ```
 
-# How to get support from the OAI Community # 
+### LEO Simulation
+Two models:
+- **SAT_LEO_TRANS**: transparent satellite, gNB on ground
+- **SAT_LEO_REGEN**: regenerative satellite, gNB on board
 
-You can ask your question on the [mailing lists](https://gitlab.eurecom.fr/oai/openairinterface5g/-/wikis/MailingList).
+Example for transparent LEO:
+```bash
+channelmod = {
+  max_chan=10;
+  modellist="modellist_rfsimu_1";
+  modellist_rfsimu_1 = (
+    {
+      model_name     = "rfsimu_channel_enB0"
+      type           = "SAT_LEO_TRANS";
+      noise_power_dB = -100;
+    },
+    {
+      model_name     = "rfsimu_channel_ue0"
+      type           = "SAT_LEO_TRANS";
+      noise_power_dB = -100;
+    }
+  );
+};
+```
+Add to conf file for leo under `rfsimulator`:
+```bash
+options = ("chanmod");
+```
+To simulate a LEO satellite channel model with rfsimulator in UL (DL is simulated at the UE side), either the channelmod section as shown before has to be added to the gNB conf file, or a channelmod conf file has to be included like this:
+```bash
+@include "channelmod_rfsimu_LEO_satellite.conf"
+```
 
-Your email should contain below information:
+## Commands
+After configuring the necessary configuration files, you can run the following commands:
 
-- A clear subject in your email.
-- For all the queries there should be [Query\] in the subject of the email and for problems there should be [Problem\].
-- In case of a problem, add a small description.
-- Do not share any photos unless you want to share a diagram.
-- OAI gNB/DU/CU/CU-CP/CU-UP configuration file in `.conf` format only.
-- Logs of OAI gNB/DU/CU/CU-CP/CU-UP in `.log` or `.txt` format only.
-- In case your question is related to performance, include a small description of the machine (Operating System, Kernel version, CPU, RAM and networking card) and diagram of your testing environment.
-- Known/open issues are present on [GitLab](https://gitlab.eurecom.fr/oai/openairinterface5g/-/issues), so keep checking.
 
-Always remember a structured email will help us understand your issues quickly.
+ **GEO GNB :**
+```bash
+cd cmake_targets
+sudo ./ran_build/build/nr-softmodem -O ../ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn.conf --rfsim --rfsimulator.prop_delay 238.74> gnb_geo.log 2>&1
+```
+```> gnb_geo.log 2>&1```  is used to include options to redirect both standard output and errors to log 
+**GEO UE**
+```bash
+cd cmake_targets
+sudo ./ran_build/build/nr-uesoftmodem -O ../targets/PROJECTS/GENERIC-NR-5GC/CONF/ue.conf --band 254 -C 2488400000 --CO -873500000 -r 25 --numerology 0 --ssb 60 --rfsim --rfsimulator.prop_delay 238.74> ue_geo.log 2>&1
+```
+
+
+ **LEO GNB  :**
+```bash
+cd cmake_targets
+sudo ./ran_build/build/nr-softmodem -O ../ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn-leo.conf --rfsim > gnb_leo.log 2>&1
+```
+
+
+ **LEO UE  :**
+```bash
+cd cmake_targets
+sudo ./ran_build/build/nr-uesoftmodem -O ../targets/PROJECTS/GENERIC-NR-5GC/CONF/ue.conf --band 254 -C 2488400000 --CO -873500000 -r 25 --numerology 0 --ssb 60 --rfsim --rfsimulator.prop_delay 20 --rfsimulator.options chanmod --time-sync-I 0.1 --ntn-initial-time-drift -46 --autonomous-ta> ue_leo.log 2>&1
+```
+
+
+
