@@ -27,3 +27,4 @@ nfapi_nr_interface_scf
 *.out
 CMakeUserPresets.json
 cmake_targets/ran_build/
+cmake_targets/ran_build/
